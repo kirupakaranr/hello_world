@@ -8,7 +8,7 @@ if (CONAN_EXPORTED)
 	include (${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 	conan_basic_setup()
 else()
-	include (build/scripts/conan.cmake)
+	include (cmake/conan.cmake)
 	conan_cmake_run (CONANFILE conanfile.py
 		BASIC_SETUP
 		BUILD missing
